@@ -233,3 +233,8 @@ This implementation bridges cryptographic history with modern technology, preser
 
 **免责声明：** 本工具为教育目的设计，不应用于实际安全通信。现代加密应使用AES、RSA等标准化算法。
 **Disclaimer:** This tool is designed for educational purposes and should not be used for actual secure communication. Modern encryption should use standardized algorithms such as AES or RSA.
+
+![ ](https://github.com/PaulLiszt/EnigmaEnhanced/blob/c0bb58f992df4c11a79091ab4c4bd1614973710c/mermaid.png)
+
+欢迎贡献代码！让我们共同守护数字世界的安全与隐私。
+Welcome to contribute code! Let's protect the security and privacy of the digital world together.
