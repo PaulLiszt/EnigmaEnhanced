@@ -1,6 +1,9 @@
 # EnigmaEnhanced
 # Python 实现增强版恩尼格玛密码机
 Enhanced Enigma Cipher Machine - Python Implementation
+[![PyPI version](https://badge.fury.io/py/EnigmaEnhanced.svg)](https://pypi.org/project/EnigmaEnhanced/)
+[![Build Status](https://github.com/PaulLiszt/EnigmaEnhanced/actions/workflows/python-package.yml/badge.svg)](https://github.com/PaulLiszt/EnigmaEnhanced/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## 安装
