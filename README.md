@@ -2,6 +2,7 @@
 # Python 实现增强版恩尼格玛密码机
 Enhanced Enigma Cipher Machine - Python Implementation
 
+
 ## 安装
 install
 
@@ -9,6 +10,7 @@ bash
 ```
 pip install EnigmaEnhanced
 ```
+
 
 ## 使用方式
 Usage
@@ -57,6 +59,18 @@ bash
 ```
 enigmaenhanced --keyfile my_key.json --decrypt "ENC:AbCdEfG..."
 ```
+
+
+## 项目结构
+Project Structure
+
+EnigmaEnhanced/
+├── EnigmaEnhanced/
+│   ├── __init__.py
+│   └── core.py
+├── cli.py
+├── setup.py
+└── README.md
 
 
 ## 历史背景与现代演绎
