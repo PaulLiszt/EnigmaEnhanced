@@ -7,7 +7,7 @@ install
 
 bash
 ```
-pip install enigma_enhanced
+pip install EnigmaEnhanced
 ```
 
 ## 使用方式
