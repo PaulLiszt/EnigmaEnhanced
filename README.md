@@ -60,6 +60,16 @@ bash
 enigmaenhanced --keyfile my_key.json --decrypt "ENC:AbCdEfG..."
 ```
 
+### 选项：
+options:
+```
+  -v, --version         显示程序版本号 | Show program version
+  -h, --help            显示帮助信息 | Show this help message and exit
+  --encrypt TEXT        要加密的文本 | Text to encrypt
+  --decrypt CIPHERTEXT  要解密的文本（必须以 'ENC:' 开头） | Text to decrypt (must start with 'ENC:')
+  --keyfile KEYFILE     密钥文件路径（默认: enigma_key.json） | Key file path (default: enigma_key.json)
+```
+
 
 ## 项目结构
 Project Structure
