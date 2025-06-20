@@ -68,8 +68,8 @@ Project Structure
 EnigmaEnhanced/
 ├── EnigmaEnhanced/
 │   ├── __init__.py
-│   └── core.py
-├── cli.py
+│   ├── core.py
+│   └── cli.py
 ├── setup.py
 └── README.md
 ```
