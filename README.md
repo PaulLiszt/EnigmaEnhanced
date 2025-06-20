@@ -64,6 +64,7 @@ enigmaenhanced --keyfile my_key.json --decrypt "ENC:AbCdEfG..."
 ## 项目结构
 Project Structure
 
+```
 EnigmaEnhanced/
 ├── EnigmaEnhanced/
 │   ├── __init__.py
@@ -71,6 +72,7 @@ EnigmaEnhanced/
 ├── cli.py
 ├── setup.py
 └── README.md
+```
 
 
 ## 历史背景与现代演绎
