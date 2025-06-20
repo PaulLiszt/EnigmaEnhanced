@@ -2,6 +2,62 @@
 # Python 实现增强版恩尼格玛密码机
 Enhanced Enigma Cipher Machine - Python Implementation
 
+## 安装
+install
+
+bash
+```
+pip install enigma_enhanced
+```
+
+## 使用方式
+Usage
+
+### 交互模式
+Interactive Mode
+
+bash
+```
+enigmaenhanced
+```
+
+在交互模式下：
+In interactive mode:
+
+*输入/genkey生成密钥
+ -Enter /genkey to generate a key
+
+*输入/loadkey <filename>加载密钥
+ -Enter /loadkey <filename> to load a key
+
+*输入普通文本进行加密
+ -Enter regular text for encryption
+
+*输入以ENC:开头的文本进行解密
+ -Enter text starting with ENC: for decryption
+
+*输入/exit退出程序
+ -Enter /exit to quit the program
+
+### 批处理模式
+Batch Mode
+
+加密文本：
+Encrypt text:
+
+bash
+```
+enigmaenhanced --keyfile my_key.json --encrypt "明文plaintext"
+```
+
+解密文本：
+Decrypt text:
+
+bash
+```
+enigmaenhanced --keyfile my_key.json --decrypt "ENC:AbCdEfG..."
+```
+
 
 ## 历史背景与现代演绎
 Historical Context and Modern Interpretation
