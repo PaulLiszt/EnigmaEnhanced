@@ -142,9 +142,11 @@ Project Structure
 EnigmaEnhanced/
 ├── enigma_enhanced/
 │   ├── __init__.py
+│   ├── VERSION
 │   └── engine.py
 ├── setup.py
 ├── LICENSE
+├── MANIFEST.in
 └── README.md
 ```
 
