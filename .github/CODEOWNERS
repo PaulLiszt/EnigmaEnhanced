@@ -1,0 +1,8 @@
+# 全局负责人
+*       @PaulLiszt
+
+# 特定文件负责人
+/.github/        @PaulLiszt
+/src/            @PaulLiszt
+/tests/          @PaulLiszt
+requirements.txt @PaulLiszt
