@@ -1,7 +1,6 @@
 from . import __version__
 from .core import EnigmaEnhanced
 import argparse
-import sys
 
 def interactive_mode():
     """交互式命令行界面 Interactive command line interface"""
