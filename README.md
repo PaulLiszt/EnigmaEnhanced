@@ -3,6 +3,7 @@
 Enhanced Enigma Cipher Machine - Python Implementation
 
 [![PyPI version](https://badge.fury.io/py/EnigmaEnhanced.svg)](https://pypi.org/project/EnigmaEnhanced/)
+[![Build Status](https://github.com/PaulLiszt/EnigmaEnhanced/actions/workflows/ci.yml/badge.svg)](https://github.com/PaulLiszt/EnigmaEnhanced/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
