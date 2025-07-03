@@ -197,3 +197,4 @@ class EnigmaEnhanced:
                 
         except Exception as e:
             return f"解密失败 Decryption failed：{str(e)}"
+            
