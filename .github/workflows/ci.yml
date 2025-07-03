@@ -10,6 +10,9 @@ on:
       - main
       - develop
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +21,7 @@ jobs:
         python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     steps:
-      # 检查代码
+      # 检出代码
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -32,13 +35,30 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest
+          pip install black autoflake pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # 运行 linting（代码风格检查）
-      - name: Run flake8
+      # 运行 black 格式化
+      - name: Run black
         run: |
-          flake8 . --max-line-length=88 --extend-ignore=E203
+          black . --line-length=88
+
+      # 运行 autoflake 删除未使用导入
+      - name: Run autoflake
+        run: |
+          autoflake --in-place --remove-all-unused-imports .
+
+      # 提交格式化更改
+      - name: Commit formatting changes
+        if: github.event_name == 'push'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Apply black and autoflake formatting" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # 运行测试
       - name: Run tests
